@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondouniversidad"
+    android:longClickable="false"
+    tools:context=".interfaces.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/portada_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:gravity="center"
+            android:text="Inventario DTI Chillan"
+            android:textColor="@drawable/texto_adicionales"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:typeface="serif"
+            app:layout_column="1"
+            app:layout_columnSpan="3"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/login_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/texto_punt_curva"
+            android:ems="10"
+            android:gravity="center"
+            android:animationCache="true"
+            android:hint="Usuario"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            android:textIsSelectable="false"
+            android:textSize="22sp"
+            android:typeface="serif"
+            app:layout_column="1"
+            app:layout_columnSpan="3"
+            app:layout_gravity="center"
+            app:layout_row="1"
+
+            />
+
+        <EditText
+            android:id="@+id/contrasena_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/texto_punt_curva"
+            android:ems="10"
+            android:singleLine="true"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textSize="22sp"
+            android:typeface="serif"
+            app:layout_column="1"
+            app:layout_columnSpan="3"
+            app:layout_gravity="center"
+            app:layout_row="2"
+            app:passwordToggleEnabled = "true"
+            />
+
+        <TextView
+            android:id="@+id/comprobacion_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="Nombre de Usuario o Contraseña Incorrecta"
+            android:textColor="@drawable/textos_aviso"
+            android:textSize="12sp"
+            android:textStyle="normal|italic"
+            android:typeface="monospace"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_columnSpan="3"
+            app:layout_gravity="center"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/inicio_login_boton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/boton_punt_curva"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="40dp"
+            android:text="Inicio"
+            android:textColor="@drawable/boton_event_efecto"
+            android:textSize="18sp"
+            android:typeface="serif"
+            app:layout_column="1"
+            app:layout_columnSpan="3"
+            app:layout_gravity="center|center_horizontal|center_vertical"
+            app:layout_row="4" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+    </ScrollView>
+</LinearLayout>

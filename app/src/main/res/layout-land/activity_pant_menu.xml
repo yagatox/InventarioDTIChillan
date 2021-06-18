@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondouniversidad"
+    android:visibility="visible"
+    tools:context=".interfaces.Pant_menu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/cerrar_sesion_boton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Cerrar Sesion"
+                app:layout_column="2"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textColor="@drawable/boton_event_efecto"
+                android:background="@drawable/boton_punt_curva"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Sistema Inventario Bodega DTI Chillan"
+                android:textColor="@drawable/texto_adicionales"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:gravity="center"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="1"
+                />
+
+            <Button
+                android:id="@+id/mostrar_todo_art_boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mostrar Todos Los Articulos"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="3"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textColor="@drawable/boton_event_efecto"
+                android:background="@drawable/boton_punt_curva"/>
+
+            <Button
+                android:id="@+id/mostrar_articulo_area_boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mostrar Los Articulos Por Area"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="4"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textColor="@drawable/boton_event_efecto"
+                android:background="@drawable/boton_punt_curva"/>
+
+            <Button
+                android:id="@+id/mostrar_articulo_categoria_boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mostrar Los Articulos Por Categoria"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="5"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textColor="@drawable/boton_event_efecto"
+                android:background="@drawable/boton_punt_curva"/>
+
+            <Button
+                android:id="@+id/mostrar_articulo_reserva_boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mostrar Los Articulos Por Reservas"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="6"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textColor="@drawable/boton_event_efecto"
+                android:background="@drawable/boton_punt_curva"/>
+
+            <Button
+                android:id="@+id/mostrar_articulo_QR_boton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/boton_punt_curva"
+                android:padding="20dp"
+                android:text="QR"
+                android:textColor="@drawable/boton_event_efecto"
+                android:textSize="18sp"
+                android:typeface="serif"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_row="0" />
+        </androidx.gridlayout.widget.GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>

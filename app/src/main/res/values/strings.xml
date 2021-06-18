@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Inventario DTI Chillan</string>
+
+    <string-array name="atributos_articuloa_area">
+        <item>Listar Todo</item>
+        <item>Area</item>
+    </string-array>
+
+
+    <string-array name="atributos_articuloa_tipo">
+        <item>Listar Todo</item>
+        <item>tipo</item>
+    </string-array>
+
+    <string-array name="atributos_reserva">
+        <item>Listar Todo</item>
+        <item>id</item>
+    </string-array>
+</resources>

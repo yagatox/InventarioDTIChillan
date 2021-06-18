@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondouniversidad"
+
+    app:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/cam_pantalla"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@id/info"
+        android:layout_toStartOf="@+id/info"
+        android:layout_toLeftOf="@+id/info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/info">
+
+
+        <SurfaceView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="198dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cuadrado_camara" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_column="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_row="0">
+        android:layout_toLeftOf=@id/cam_pantalla
+
+        <TextView
+            android:id="@+id/code_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="informacion basica"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/estado_boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Escaner en Funcionamiento"
+            android:textColor="@color/marcouniversidad"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/btn_enable_disable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_punt_curva"
+            android:checked="true"
+            android:textColor="@drawable/boton_event_efecto"
+            android:textOff="Iniciar"
+            android:textOn="Detener" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

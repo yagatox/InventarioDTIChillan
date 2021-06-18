@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondouniversidad"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".interfaces.Pant_busqueda_filtro_reserva">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/buscador_reserva_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                android:animationCache="true"
+                android:imeOptions="actionDone"
+                android:background="@drawable/texto_punt_curva"
+                android:maxLines="1"
+                android:gravity="center"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/id_Puro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Sistema Inventario De Bodega DTI Chillan"
+                android:textColor="@drawable/texto_adicionales"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:typeface="serif"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="0" />
+
+            <TextView
+
+                android:id="@+id/nombre_articulo_get"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Todas las Reservas"
+                android:textColor="@drawable/texto_adicionales"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:typeface="serif"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="1" />
+
+
+            <ListView
+                android:id="@+id/listadeArticulos"
+                android:layout_width="match_parent"
+                android:layout_height="404dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/panel_curvo"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="3"
+                app:layout_rowSpan="@android:integer/config_longAnimTime" />
+
+
+            <TextView
+                android:id="@+id/mensaje_aviso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="5"
+                app:layout_rowSpan="@android:integer/config_longAnimTime"/>
+
+        </androidx.gridlayout.widget.GridLayout>
+    </ScrollView>
+
+</LinearLayout>
